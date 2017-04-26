@@ -1,0 +1,41 @@
+bop_page:
+#brickopedia page data
+
+consumerid_page:
+#consumer identification page data
+
+consumerov_page:
+#consumer overview page data
+
+accountfs_page:
+#account fact sheet page data
+
+salesov_page:
+#sales overview page data
+
+newsalesorder_page:
+#creating sales order page data
+
+newcontract_page:
+#creating club contract page data
+
+cr_page:
+#consumer request page data
+
+email_page:
+#e-mail page data
+
+letter_page:
+#letter page data
+
+inbox_page:
+#inbox page data
+
+interactionhis_page:
+#interaction history page data
+
+knowledgearticle_page:
+#knowledge article search page data
+
+changesalesorder_page:
+#change sales order page data
