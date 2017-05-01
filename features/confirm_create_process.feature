@@ -27,7 +27,15 @@ Feature: Confirming an account
     When I click save
     Then I have an account number
 
+    Given: I am available and ready on SAP CRM
+  Scenario I am receiving a call from a consumer who has called before
+    When I click accept
+    Then I should see a consumers account
 
+    Given: I am available and ready on SAP CRM
+  Scenario I am receiving a call from a consumer who hasn't called before
+    When I click accept
+    Then I should see the standard consumers account
 
 
 
