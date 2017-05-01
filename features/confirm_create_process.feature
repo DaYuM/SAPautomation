@@ -18,7 +18,15 @@ Feature: Confirming an account
     When I attempt to search for an Account using its specific AccountNumber
     Then I should be able to see all of the consumer's address information
 
-  Scenario: 
+  Scenario: I am provided with all of the consumers information
+    And I click new
+    And I enter first name
+    And I enter last name
+    And I enter Address
+    And I enter e-mail address
+    When I click save
+    Then I have an account number
+
 
 
 
