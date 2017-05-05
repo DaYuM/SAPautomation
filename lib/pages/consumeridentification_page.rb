@@ -27,31 +27,79 @@ class ConsumerIdentificationPage
 end
 
 #Account Search Fields
-    Customer Number: id="C3_W18_V19_V20_searchcustomer_struct.partner"
-    First Name: id="C3_W18_V19_V20_searchcustomer_struct.mc.name2"
-    Last Name: id="C3_W18_V19_V20_searchcustomer_struct.mc.name1"
-    Street/House Number:id="C3_W18_V19_V20_searchcustomer_struct.street"
-    City: id="C3_W18_V19_V20_searchcustomer_struct.city1"
-    Postal Code: id="C3_W18_V19_V20_searchcustomer_struct.post_code1"
-    Region: id="C3_W18_V19_V20_searchcustomer_struct.region"
-    Country: id="C3_W18_V19_V20_searchcustomer_struct.country"
-    Telephone: id="C3_W18_V19_V20_searchcustomer_struct.telephone"
-    Fax: id="C3_W18_V19_V20_searchcustomer_struct.fax"
-    E-mail Address: id="C3_W18_V19_V20_searchcustomer_struct.email"
-    LEGO ID: id="C3_W18_V19_V20_searchcustomer.yylego_username"
-    VIP Card: id="C3_W18_V19_V20_searchcustomer.yylego_rewcard"
-    Order number: id="C3_W18_V19_V20_searchcustomer_ext.yyord_num"
-    Club contract: id="C3_W18_V19_V20_searchcustomer_ext.yyclub_con"
-    Consumer Request: id="C3_W18_V19_V20_searchorder_struct.object_id"
-    Chat ID: id="C3_W18_V19_V20_searchcustomer_struct.yy_chat_id"
-    Search Account: id="C3_W18_V19_V20_Search"
-    Reset Fields: id="C3_W18_V19_V20_Reset"
-    New Account: id="C3_W18_V19_V20_New"
+    text_field(:CustomerNumber, id='C3_W18_V19_V20_searchcustomer_struct.partner')
+    text_field(:FirstName, id='C3_W18_V19_V20_searchcustomer_struct.mc.name2')
+    text_field(:LastName, id='C3_W18_V19_V20_searchcustomer_struct.mc.name1')
+    text_field(:StreetHouseNumber, id='C3_W18_V19_V20_searchcustomer_struct.street')
+    text_field(:City, id='C3_W18_V19_V20_searchcustomer_struct.city1')
+    text_field(:PostalCode, id='C3_W18_V19_V20_searchcustomer_struct.post_code1')
+    text_field(:Region, id='C3_W18_V19_V20_searchcustomer_struct.region')
+    text_field(:Country, id='C3_W18_V19_V20_searchcustomer_struct.country')
+    text_field(:Telephone, id='C3_W18_V19_V20_searchcustomer_struct.telephone')
+    text_field(:Fax, id='C3_W18_V19_V20_searchcustomer_struct.fax')
+    text_field(:EmailAddress, id='C3_W18_V19_V20_searchcustomer_struct.email')
+    text_field(:LEGOID, id='C3_W18_V19_V20_searchcustomer.yylego_username')
+    text_field(:VIPCard, id='C3_W18_V19_V20_searchcustomer.yylego_rewcard')
+    text_field(:OrderNumber, id='C3_W18_V19_V20_searchcustomer_ext.yyord_num')
+    text_field(:ClubContract, id='C3_W18_V19_V20_searchcustomer_ext.yyclub_con')
+    text_field(:ConsumerRequest, id='C3_W18_V19_V20_searchorder_struct.object_id')
+    text_field(:ChatID, id='C3_W18_V19_V20_searchcustomer_struct.yy_chat_id')
+    button(:SearchAccount, value='Search Account')
+    button(:ResetFields, value='Reset')
+    button(:NewAccount, value='C3_W18_V19_V20_New')
+
+    #button(:SearchAccount, id='C3_W18_V19_V20_Search')
+    #button(:ResetFields, id='C3_W18_V19_V20_Reset')
+    #button(:NewAccount, id='C3_W18_V19_V20_New')
+
 
 #upon Account searched
-    Confirm
-    Save
-    Delete
-    Edit
-    New Search
-    Mobil
+  #account number field
+    text_field(:AccountID, id='C20_W64_V65_V66_customer_struct.bp_number')
+  #First Name
+    text_field(:FirstName2, id='C20_W64_V65_V66_customer_struct.firstname')
+  #Last Name
+    text_field(:LastName2, id='C20_W64_V65_V66_customer_struct.lastname')
+  #Street Address
+    text_field(:StreetHouseNumber2, id='C20_W64_V65_V66_defaultaddress_struct.street')
+  #Apartment/Suite/House number
+    text_field(:ApartmentNumber, id='C20_W64_V65_V66_defaultaddress_str.suppl1')
+  #c/o: field
+    text_field(:CareOf, id='C20_W64_V65_V66_defaultaddress_struct.c_o_name')
+  #city
+    text_field(:City2, id='C20_W64_V65_V66_defaultaddress_struct.city')
+  #postal code
+    text_field(:PostalCode2, id='C20_W64_V65_V66_defaultaddress_struct.postl_cod1')
+  #region/state
+    text_field(:State, id='C20_W64_V65_V66_defaultaddress_struct.region')
+  #country
+    text_field(:Country2, id='C20_W64_V65_V66_defaultaddress_struct.country')
+  #country text
+    text_field(:CountryText2, id='C20_W64_V65_V66_defaultaddress_struct.country_text')
+  #language
+    text_field(:Language, id='C20_W64_V65_V66_defaultaddress_struct.correspondlanguage')
+  #telephone
+    text_field(:Telephone2, id='C20_W64_V65_V66_defaultaddress_struct.telephonetel')
+  #fax
+    text_field(:Fax2, id='C20_W64_V65_V66_defaultaddress_struct.faxfax')
+  #cellphone
+    text_field(:Cellphone, id='C20_W64_V65_V66_defaultaddress_struct.telephonemob')
+  #email
+    text_field(:Email2, id='C20_W64_V65_V66_defaultaddress_struct.e_mailsmt')
+  #vip card
+    text_field(:VIPCard2, id='C20_W64_V65_V66_customer_ext.yylego_rewcard')
+  #LEGO id
+    text_field(:LEGOID2, id='C20_W64_V65_V66_customer_ext.yylego_username')
+
+  #Confirm
+    button(:Confirm, id='C20_W64_V65_V66_Confirm')
+  #Save
+    button(:Save, id='C20_W64_V65_V66_Save')
+  #Cancel
+    button(:Cancel, id='C20_W64_V65_V66_reset')
+  #Edit
+    button(:Edit, id='C20_W64_V65_V66_Change')
+  #New Search
+    button(:NewSearch, id='C20_W64_V65_V66_clear')
+  #Unconfirm
+    button(:Unconfirm, id='C20_W64_V65_V66_unconfirm')
